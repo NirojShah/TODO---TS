@@ -1,7 +1,6 @@
 ### Create Todo.
 POST http://localhost:5000/app/v1/todo
 Content-Type: application/json
-
 { 
     "todoName": "Clean the bike." 
 }
