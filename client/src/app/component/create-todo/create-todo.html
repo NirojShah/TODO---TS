@@ -1,0 +1,7 @@
+<div class="container">
+  <p>Todo</p>
+  <div class="input-container">
+    <input [value]="inputVal()" (input)="inputVal.set($event.target.value)" type="text" class="input" />
+    <button (click)="handleCreate(inputVal())">Create</button>
+  </div>
+</div>
