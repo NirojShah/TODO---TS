@@ -1,0 +1,6 @@
+<div
+  [hidden]="todoStore.isError() == null ? true : false"
+  [className]="todoStore.isError() ? 'message-container isError' : 'message-container isError'"
+>
+  <p>{{ todoStore.errorMessage() }}</p>
+</div>
