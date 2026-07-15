@@ -1,0 +1,18 @@
+<div class="todo-wrapper">
+  <div class="todo-list">
+    @for (item of todos(); track $index) {
+      <div class="todo-item" [attr.data-id]="item.taskId">
+        <label class="todo-checkbox">
+          <span class="checkmark" aria-hidden="true">{{ $index + 1 }}</span>
+        </label>
+
+        <p class="todo-text" [className]="item.status ? 'todo-text' : 'underline todo-text'">{{ item.taskName }}</p>
+
+        <div class="todo-actions">
+          <button (click)="handleUpdate(item.taskId)" class="btn edit" title="Edit">✏️</button>
+          <button class="btn delete" title="Delete" (click)="handleDelete(item.taskId)">🗑️</button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,81 @@
+(/* Todo component styles */)
+.todo-wrapper {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 12px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.title {
+	margin: 0 0 10px 0;
+	font-size: 1.1rem;
+	color: #111827;
+	font-weight: 600;
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.todo-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px;
+	border-radius: 6px;
+	background: #f8fafc;
+}
+
+.todo-checkbox {
+	display: flex;
+	align-items: center;
+}
+
+.todo-checkbox input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	margin: 0;
+}
+
+.todo-text {
+	flex: 1 1 auto;
+	margin: 0;
+	font-size: 0.98rem;
+	color: #0f172a;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.todo-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.btn {
+	border: none;
+	background: transparent;
+	padding: 6px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.95rem;
+}
+
+.btn:hover { background: rgba(2,6,23,0.04); }
+
+.btn.edit { color: #0ea5e9; }
+.btn.delete { color: #ef4444; }
+
+@media (max-width: 480px) {
+	.todo-wrapper { padding: 10px; }
+	.todo-text { font-size: 0.92rem; }
+}
+
+.underline{
+	text-decoration: line-through;
+}

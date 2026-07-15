@@ -1,0 +1,24 @@
+### Create Todo.
+POST http://localhost:5000/app/v1/todo
+Content-Type: application/json
+{ 
+    "todoName": "Clean the bike." 
+}
+
+###
+
+## Get Todos.
+GET http://localhost:5000/app/v1/todo
+Content-Type: application/json
+
+###
+
+
+## Update Todo.
+PATCH http://localhost:5000/app/v1/todo?taskId=1
+Content-Type: application/json
+
+###
+
+## Delete Todo
+DELETE http://localhost:5000/app/v1/todo?taskId=2

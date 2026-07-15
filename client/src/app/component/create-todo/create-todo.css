@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  width: 70%;
+  height: 48px;
+}
+
+.container p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.input-container input {
+  width: 70%;
+  height: 48px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 2px solid gray;
+  border-radius: 6px;
+}
+
+.input-container button{
+    border: 2px solid black;
+    height: 48px;
+    width: 140px;
+}
+
